@@ -1,0 +1,29 @@
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile.dev
+    container_name: api
+    ports:
+      - 3000:3000
+    environment:
+      RAILS_ENV: development
+      DB_HOST: mysql
+      DB_NAME: root
+      DB_PASSWORD: password
+    depends_on:
+      - mysql
+    volumes:
+      - ./api:/api
+
+  mysql:
+    image: public.ecr.aws/docker/library/mysql:8.1
+    container_name: mysql
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      TZ: "Asia/Tokyo"
+
+volumes:
+  mysql_data:
