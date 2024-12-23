@@ -5,7 +5,7 @@ module Api
 
       def index
         front_skills = FrontSkill.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded front_skills', data: front_skills }
+        render json: { status: 'SUCCESS', data: front_skills }
       end
 
       def show

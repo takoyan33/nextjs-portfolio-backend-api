@@ -5,7 +5,7 @@ module Api
 
       def index
         licenses = License.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded licenses', data: licenses }
+        render json: { status: 'SUCCESS', data: licenses }
       end
 
       def show

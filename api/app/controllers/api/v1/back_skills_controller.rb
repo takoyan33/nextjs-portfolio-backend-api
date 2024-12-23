@@ -5,7 +5,7 @@ module Api
 
       def index
         back_skills = BackSkill.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded back_skills', data: back_skills }
+        render json: { status: 'SUCCESS', data: back_skills }
       end
 
       def show

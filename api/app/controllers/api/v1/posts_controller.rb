@@ -5,11 +5,11 @@ module Api
 
       def index
         posts = Post.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded posts', data: posts }
+        render json: { status: 'SUCCESS', data: posts }
       end
 
       def show
-        render json: { status: 'SUCCESS', message: 'Loaded the post', data: @post }
+        render json: { status: 'SUCCESS', data: @post }
       end
 
       def create

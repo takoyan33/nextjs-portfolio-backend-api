@@ -5,11 +5,11 @@ module Api
 
       def index
         other_skills = OtherSkill.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded other_skills', data: other_skills }
+        render json: { status: 'SUCCESS', data: other_skills }
       end
 
       def show
-        render json: { status: 'SUCCESS', message: 'Loaded the other_skill', data: @other_skill }
+        render json: { status: 'SUCCESS', data: @other_skill }
       end
 
       def create

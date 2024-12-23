@@ -5,11 +5,11 @@ module Api
 
       def index
         portfolios = Portfolio.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded portfolios', data: portfolios }
+        render json: { status: 'SUCCESS',  data: portfolios }
       end
 
       def show
-        render json: { status: 'SUCCESS', message: 'Loaded the portfolio', data: @portfolio }
+        render json: { status: 'SUCCESS', data: @portfolio }
       end
 
       def create

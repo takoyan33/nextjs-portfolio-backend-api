@@ -5,7 +5,7 @@ module Api
 
       def index
         jobs = Job.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded jobs', data: jobs }
+        render json: { status: 'SUCCESS', data: jobs }
       end
 
       def show

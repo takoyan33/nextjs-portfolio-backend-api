@@ -5,7 +5,7 @@ module Api
 
       def index
         histories = History.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded histories', data: histories }
+        render json: { status: 'SUCCESS', data: histories }
       end
 
       def show
