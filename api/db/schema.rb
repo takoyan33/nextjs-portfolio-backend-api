@@ -12,21 +12,21 @@
 
 ActiveRecord::Schema[8.0].define(version: 2024_11_23_023702) do
   create_table "back_skills", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "rank"
-    t.string "tag"
+    t.string "name", null: false
+    t.string "rank", null: false
+    t.string "tag", null: false
     t.string "about"
-    t.string "icon"
+    t.string "icon", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "front_skills", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "rank"
-    t.string "tag"
+    t.string "name", null: false
+    t.string "rank", null: false
+    t.string "tag", null: false
     t.string "about"
-    t.string "icon"
+    t.string "icon", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,11 +40,11 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_23_023702) do
   end
 
   create_table "infra_skills", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "rank"
-    t.string "tag"
+    t.string "name", null: false
+    t.string "rank", null: false
+    t.string "tag", null: false
     t.string "about"
-    t.string "icon"
+    t.string "icon", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -65,20 +65,20 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_23_023702) do
   end
 
   create_table "other_skills", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "rank"
-    t.string "tag"
+    t.string "name", null: false
+    t.string "rank", null: false
+    t.string "tag", null: false
     t.string "about"
-    t.string "icon"
+    t.string "icon", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "portfolios", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.string "date"
-    t.json "tag"
-    t.string "topImg"
+    t.string "name", null: false
+    t.string "date", null: false
+    t.json "tag", null: false
+    t.string "topImg", null: false
     t.string "front_url"
     t.string "back_url"
     t.string "front_github"
@@ -93,7 +93,11 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_23_023702) do
     t.json "front_skill"
     t.json "back_skill"
     t.json "infra_skill"
-    t.string "time"
+    t.string "time", null: false
+    t.string "prev_title"
+    t.string "prev_article_id"
+    t.string "next_title"
+    t.string "next_article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
