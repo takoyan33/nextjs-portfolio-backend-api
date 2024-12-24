@@ -82,7 +82,7 @@ License.create!([
 ])
 
 Portfolio.create!([
-	{
+{
 		"id": 1,
 		"name": "Easy To Do",
 		"date": "2024.4.12",
@@ -109,7 +109,9 @@ Portfolio.create!([
 		],
 		"back_skill": ["Firestore"],
 		"infra_skill": ["firebase hosting"],
-		"time": "2ヶ月"
+		"time": "2ヶ月",
+		"next_title": "Manga Study",
+		"next_article_id": "2"
 	},
 	{
 		"id": 2,
@@ -117,7 +119,7 @@ Portfolio.create!([
 		"date": "2024.2.31",
 		"tag": ["React", "Next.js"],
 		"topImg": "/images/portfolio/portfolio_top2.png",
-		"front_url": "https://manga-kousatu-net.vercel.app/",
+		"front_url": "https://manga-study-net.vercel.app/",
 		"back_url": "",
 		"front_github": "https://github.com/takoyan33/manga-kousatu.net",
 		"back_github": "",
@@ -138,7 +140,11 @@ Portfolio.create!([
 		],
 		"back_skill": ["Firestore"],
 		"infra_skill": ["firebase hosting"],
-		"time": "3ヶ月"
+		"time": "3ヶ月",
+		"prev_title": "Easy To Do",
+		"prev_article_id": "1",
+		"next_title": "To You Design(ポートフォリオサイト)",
+		"next_article_id": "3"
 	},
 	{
 		"id": 3,
@@ -146,8 +152,8 @@ Portfolio.create!([
 		"date": "2023.11.30",
 		"tag": ["React", "Next.js", "Vercel"],
 		"topImg": "/images/portfolio/portfolio_top3.png",
-		"front_url": "https://rails-react-app-front.vercel.app/",
-		"front_github": "https://github.com/takoyan33/rails-react-app-front",
+		"front_url": "https://to-you-design.vercel.app/",
+		"front_github": "https://github.com/takoyan33/nextjs-portfolio",
 		"back_github": "",
 		"color": "portfolio__tag--color4",
 		"about": "<p>自分についての経歴や経験を振り返るために、ポートフォリオサイトとして、Next.jsで制作しました。</p>",
@@ -158,7 +164,11 @@ Portfolio.create!([
 		"appealImg": "/images/portfolio/portfolio_appeal3.png",
 		"front_skill": ["React", "Next.js", "SCSS", "Biome"],
 		"infra_skill": ["Vercel"],
-		"time": "2ヶ月"
+		"time": "2ヶ月",
+		"prev_title": "Manga Study",
+		"prev_article_id": "2",
+		"next_title": "サークル管理App",
+		"next_article_id": "4"
 	},
 	{
 		"id": 4,
@@ -180,7 +190,11 @@ Portfolio.create!([
 		"infra_skill": ["Vercel", "Render"],
 		"time": "1ヶ月",
 		"front_url": "https://rails-react-app-front.vercel.app/",
-		"back_url": "https://rails-react-app-backend.onrender.com/"
+		"back_url": "https://rails-react-app-backend.onrender.com/",
+		"prev_title": "To You Design(ポートフォリオサイト)",
+		"prev_article_id": "3",
+		"next_title": "株式会社セルフ・ヒーリング実践研究会サイト構築",
+		"next_article_id": "5"
 	},
 	{
 		"id": 5,
@@ -201,7 +215,11 @@ Portfolio.create!([
 		"appealImg": "/images/portfolio/portfolio_9.png",
 		"front_skill": ["html", "css", "JavaScript"],
 		"back_skill": ["WordPress"],
-		"time": "3ヶ月"
+		"time": "3ヶ月",
+		"prev_title": "サークル管理App",
+		"prev_article_id": "4",
+		"next_title": "三菱レンタカー下層ページコーディング",
+		"next_article_id": "6"
 	},
 	{
 		"id": 6,
@@ -222,7 +240,9 @@ Portfolio.create!([
 		"appealImg": "/images/portfolio/portfolio_function6.png",
 		"front_skill": ["html", "CSS", "JavaScript"],
 		"back_skill": ["WordPress"],
-		"time": "2ヶ月"
+		"time": "2ヶ月",
+		"prev_title": "株式会社セルフ・ヒーリング実践研究会サイト構築",
+		"prev_article_id": "5"
 	}
 ])
 
